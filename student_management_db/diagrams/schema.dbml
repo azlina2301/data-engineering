@@ -1,5 +1,6 @@
 Table department {
   department_id integer [increment, primary key]
+  name varchar(50) NOT NULL
   buiding varchar(50)
   created_at timestamp [default: 'now()']
 }
