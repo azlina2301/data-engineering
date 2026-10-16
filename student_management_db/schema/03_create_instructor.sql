@@ -5,7 +5,7 @@ CREATE TABLE instructor (
   email varchar(100) NOT NULL UNIQUE,
   phone varchar(20),
   date_of_birth date,
-  hire_date date DEFAULT CURRENT_DATE,
+  hire_date date,
   salary numeric(10, 2),
   department_id INT REFERENCES department(department_id),
   created_at timestamp DEFAULT CURRENT_TIMESTAMP
